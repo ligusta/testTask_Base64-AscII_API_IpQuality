@@ -1,7 +1,7 @@
 import pandas as pd
 import requests
 
-df = pd.read_csv('ips.csv')
+df = pd.read_csv('list_ip.csv')
 
 cutoff_list = []
 ip_list = []
@@ -12,7 +12,7 @@ for y in range (0,200):
 
     url = ('https://ipqualityscore.com/api/json/ip')
     params = {
-        'key': 'BEOThHbIDo34q9lycrGuA7oJMvPTesya',
+        'key': 'YOUR_API_KEY',
         'ip': ip,
         'strictness': 2,
         'allow_public_access_points': 'true',
